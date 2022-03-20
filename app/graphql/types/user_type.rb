@@ -24,12 +24,8 @@ module Types
       object.errors.map { |e| { field_name: e.attributes, errors: object.errors[e.attribute] } }
     end
 
-    def self.visible?(context)
-      !!context[:current_user]
-    end
-
-
-
+    # def self.visible?(context)
+    #   !!context[:current_user]
+    # end
   end
-
 end

@@ -3,12 +3,12 @@ module Types
     graphql_name 'UserInputType'
     description 'All attributes to create/update a new user'
 
-    argument :id, ID, required: true
+    argument :id, ID, required: false
     argument :first_name, String, required: true
     argument :last_name, String, required: true
     argument :email, String, required: true
     argument :password, String, required: true
-    argument :is_superadmin, Boolean, required: true
+    argument :is_superadmin, Boolean, required: false
     argument :street, String, required: true
     argument :number, Integer, required: true
     argument :city, String, required: true
